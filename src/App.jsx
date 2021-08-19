@@ -6,8 +6,8 @@ import UseContext from './hooks/useContext'
 export default function App() {
   const components = [
     { key: 'useEffect', component: UseEffect },
-    { key: 'useReducer', component: UseReducer },
     { key: 'useContext', component: UseContext },
+    { key: 'useReducer', component: UseReducer },
   ]
   return (
     <div className={'app'}>
