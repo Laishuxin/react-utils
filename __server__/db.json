@@ -1,0 +1,8 @@
+{
+  "products": [
+    { "id": 1, "name": "product1", "detail": "product1 is good" },
+    { "id": 2, "name": "product1", "detail": "product1 is excellent" },
+    { "id": 3, "name": "product2", "detail": "product2 is good" },
+    { "id": 4, "name": "product3", "detail": "product3 is good" }
+  ]
+}
