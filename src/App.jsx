@@ -11,7 +11,7 @@ export default function App() {
   ]
   return (
     <div className={'app'}>
-      {components.map((item) => (
+      {components.map(item => (
         <section key={item.key}>
           <h1>{item.key}</h1>
           <item.component />

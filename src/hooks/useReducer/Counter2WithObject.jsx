@@ -9,7 +9,7 @@ export default function Counter2WithObject() {
     <div>
       <h1>Counter2</h1>
       <p>当前计数为：{value}</p>
-      <div className="btns">
+      <div className={'btns'}>
         <button onClick={() => dispatch(action2_create(INCREMENT))}>
           increment
         </button>

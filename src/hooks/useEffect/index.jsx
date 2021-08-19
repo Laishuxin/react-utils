@@ -11,16 +11,15 @@ export default function UseEffect() {
   useEffect(() => {
     fetchData(`${BASE_URL}/products?name=${query}`)
   }, [query])
-  
 
-  const handleClick = (query) => {
+  const handleClick = query => {
     setQuery(query)
   }
 
   return (
     <Fragment>
       {isError ? <div style={{ color: 'red' }}>something error...</div> : null}
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={e => e.preventDefault()}>
         <SearchPanel onClick={handleClick} />
         {isLoading ? (
           <div style={{ color: 'lightblue' }}>loading...</div>
@@ -32,4 +31,3 @@ export default function UseEffect() {
     </Fragment>
   )
 }
-

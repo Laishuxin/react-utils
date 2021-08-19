@@ -9,4 +9,3 @@ export default function Child1() {
     </section>
   )
 }
-

@@ -6,10 +6,10 @@ export default function SearchPanel(props) {
   return (
     <div>
       <input
-        type="text"
-        placeholder="请输入商品的信息"
+        type={'text'}
+        placeholder={'请输入商品的信息'}
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={e => setInputValue(e.target.value)}
       />
       <button
         onClick={() => {

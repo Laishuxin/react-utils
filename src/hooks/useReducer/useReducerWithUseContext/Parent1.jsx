@@ -17,12 +17,12 @@ export default function Parent1() {
         <h2>parent counter</h2>
         <span>please enter step: </span>
         <input
-          type="number"
+          type={'number'}
           value={inputValue}
-          onChange={(e) => setInputValue(parseFloat(e.target.value) || 0)}
+          onChange={e => setInputValue(parseFloat(e.target.value) || 0)}
         />
         <p>current count: {value}</p>
-        <div className="btns">
+        <div className={'btns'}>
           <button
             onClick={() => dispatch(action4_create(INCREMENT, inputValue))}
           >
@@ -37,7 +37,7 @@ export default function Parent1() {
             reset
           </button>
         </div>
-        <div className="children">
+        <div className={'children'}>
           <Child1 />
           <Child2 />
         </div>

@@ -9,7 +9,7 @@ export const context = createContext({
 export default function Parent2() {
   const value = {
     quote: 'Life is short, you need python.',
-    who: 'Guido van Rossum'
+    who: 'Guido van Rossum',
   }
   return (
     // Use default value('Talk is cheap, show me the code)

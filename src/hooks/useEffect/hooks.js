@@ -12,21 +12,21 @@ export const useFetch = () => {
     setIsLoading(true)
 
     fetch(url)
-      .then(async (response) => {
+      .then(async response => {
         if (response.ok) {
           setData(await response.json())
         } else {
           setData(null)
         }
       })
-      .catch((_) => {
+      .catch(_ => {
         setIsError(true)
       })
 
     setIsLoading(false)
   }, [url])
 
-  const fetchData = (url) => {
+  const fetchData = url => {
     setUrl(url)
   }
 

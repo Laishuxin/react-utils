@@ -6,8 +6,9 @@ export default function SubChild1() {
   return (
     <section>
       <h2>sub-child1</h2>
-      <p>well-known saying: <q>{ctx}</q></p>
+      <p>
+        well-known saying: <q>{ctx}</q>
+      </p>
     </section>
   )
 }
-
